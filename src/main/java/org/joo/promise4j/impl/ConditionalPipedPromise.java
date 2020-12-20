@@ -1,10 +1,10 @@
 package org.joo.promise4j.impl;
 
-import java.util.Objects;
-import java.util.function.Predicate;
-
 import org.joo.promise4j.PipeDoneCallback;
 import org.joo.promise4j.Promise;
+
+import java.util.Objects;
+import java.util.function.Predicate;
 
 public class ConditionalPipedPromise<D, F extends Throwable> extends CompletableDeferredObject<D, F> {
 

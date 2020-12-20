@@ -1,10 +1,10 @@
 package org.joo.promise4j.test;
 
-import java.util.concurrent.CountDownLatch;
-
 import org.joo.promise4j.Deferred;
 import org.joo.promise4j.impl.CompletableDeferredObject;
 import org.junit.Test;
+
+import java.util.concurrent.CountDownLatch;
 
 public class TestException {
 

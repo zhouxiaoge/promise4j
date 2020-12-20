@@ -1,8 +1,5 @@
 package org.joo.promise4j.test;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-
 import org.joo.promise4j.Deferred;
 import org.joo.promise4j.DeferredStatus;
 import org.joo.promise4j.Promise;
@@ -12,6 +9,9 @@ import org.joo.promise4j.impl.SimpleDonePromise;
 import org.joo.promise4j.impl.SimpleFailurePromise;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public class TestSimple {
 

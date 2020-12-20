@@ -1,13 +1,12 @@
 package org.joo.promise4j.impl;
 
+import net.jodah.failsafe.AsyncFailsafe;
+import net.jodah.failsafe.ExecutionContext;
+import org.joo.promise4j.Promise;
+
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.function.Supplier;
-
-import org.joo.promise4j.Promise;
-
-import net.jodah.failsafe.AsyncFailsafe;
-import net.jodah.failsafe.ExecutionContext;
 
 public class FailSafePromise<D, F extends Throwable> extends CompletableDeferredObject<D, F> {
 

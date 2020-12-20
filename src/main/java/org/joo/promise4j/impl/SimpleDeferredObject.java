@@ -1,22 +1,11 @@
 package org.joo.promise4j.impl;
 
+import org.joo.promise4j.*;
+
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-
-import org.joo.promise4j.AlwaysCallback;
-import org.joo.promise4j.Deferred;
-import org.joo.promise4j.DeferredStatus;
-import org.joo.promise4j.DoneCallback;
-import org.joo.promise4j.FailCallback;
-import org.joo.promise4j.FilteredDoneCallback;
-import org.joo.promise4j.FilteredFailureCallback;
-import org.joo.promise4j.PipeAlwaysCallback;
-import org.joo.promise4j.PipeDoneCallback;
-import org.joo.promise4j.PipeFailureCallback;
-import org.joo.promise4j.Promise;
-import org.joo.promise4j.PromiseException;
 
 public class SimpleDeferredObject<D, F extends Throwable> implements Deferred<D, F>, Promise<D, F> {
 

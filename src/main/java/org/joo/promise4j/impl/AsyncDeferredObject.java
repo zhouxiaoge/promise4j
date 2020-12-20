@@ -1,12 +1,6 @@
 package org.joo.promise4j.impl;
 
-import org.joo.promise4j.AlwaysCallback;
-import org.joo.promise4j.Deferred;
-import org.joo.promise4j.DeferredStatus;
-import org.joo.promise4j.DoneCallback;
-import org.joo.promise4j.FailCallback;
-import org.joo.promise4j.Promise;
-import org.joo.promise4j.PromiseException;
+import org.joo.promise4j.*;
 import org.joo.promise4j.util.ThreadHints;
 import org.joo.promise4j.util.TimeoutScheduler;
 

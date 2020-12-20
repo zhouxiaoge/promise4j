@@ -1,23 +1,19 @@
 package org.joo.promise4j.test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.CountDownLatch;
-import java.util.function.Supplier;
-
 import org.joo.promise4j.Deferred;
 import org.joo.promise4j.Promise;
 import org.joo.promise4j.PromiseException;
-import org.joo.promise4j.impl.AsyncDeferredObject;
-import org.joo.promise4j.impl.CompletableDeferredObject;
-import org.joo.promise4j.impl.SimpleDonePromise;
-import org.joo.promise4j.impl.SimpleFailurePromise;
-import org.joo.promise4j.impl.SyncDeferredObject;
+import org.joo.promise4j.impl.*;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.function.Supplier;
 
 @RunWith(Parameterized.class)
 public class TestPipeline {

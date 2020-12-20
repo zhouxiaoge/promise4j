@@ -1,5 +1,7 @@
 package org.joo.promise4j;
 
+import org.joo.promise4j.impl.*;
+
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ForkJoinPool;
@@ -7,13 +9,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-
-import org.joo.promise4j.impl.CompletableDeferredObject;
-import org.joo.promise4j.impl.JoinedPromise;
-import org.joo.promise4j.impl.JoinedResults;
-import org.joo.promise4j.impl.SequentialPromise;
-import org.joo.promise4j.impl.SimpleDonePromise;
-import org.joo.promise4j.impl.SimpleFailurePromise;
 
 /**
  * Represents a Promise

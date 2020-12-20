@@ -1,10 +1,8 @@
 package org.joo.promise4j.test;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
+import net.jodah.failsafe.ExecutionContext;
+import net.jodah.failsafe.Failsafe;
+import net.jodah.failsafe.RetryPolicy;
 import org.joo.promise4j.Promise;
 import org.joo.promise4j.impl.FailSafePromise;
 import org.joo.promise4j.impl.SimpleDonePromise;
@@ -12,9 +10,10 @@ import org.joo.promise4j.impl.SimpleFailurePromise;
 import org.junit.Assert;
 import org.junit.Test;
 
-import net.jodah.failsafe.ExecutionContext;
-import net.jodah.failsafe.Failsafe;
-import net.jodah.failsafe.RetryPolicy;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class TestFailSafe {
 

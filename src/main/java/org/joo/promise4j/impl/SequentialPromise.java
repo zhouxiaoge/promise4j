@@ -1,9 +1,9 @@
 package org.joo.promise4j.impl;
 
+import org.joo.promise4j.Promise;
+
 import java.util.Collection;
 import java.util.function.Supplier;
-
-import org.joo.promise4j.Promise;
 
 public class SequentialPromise<D, F extends Throwable> extends CompletableDeferredObject<D, F> {
 

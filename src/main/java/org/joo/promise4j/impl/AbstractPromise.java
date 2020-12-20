@@ -1,15 +1,6 @@
 package org.joo.promise4j.impl;
 
-import org.joo.promise4j.AlwaysCallback;
-import org.joo.promise4j.DeferredStatus;
-import org.joo.promise4j.DoneCallback;
-import org.joo.promise4j.FailCallback;
-import org.joo.promise4j.FilteredDoneCallback;
-import org.joo.promise4j.FilteredFailureCallback;
-import org.joo.promise4j.PipeAlwaysCallback;
-import org.joo.promise4j.PipeDoneCallback;
-import org.joo.promise4j.PipeFailureCallback;
-import org.joo.promise4j.Promise;
+import org.joo.promise4j.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

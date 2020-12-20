@@ -1,20 +1,10 @@
 package org.joo.promise4j.impl;
 
-import org.joo.promise4j.AlwaysCallback;
-import org.joo.promise4j.Deferred;
-import org.joo.promise4j.DeferredStatus;
-import org.joo.promise4j.DoneCallback;
-import org.joo.promise4j.FailCallback;
-import org.joo.promise4j.Promise;
-import org.joo.promise4j.PromiseException;
+import org.joo.promise4j.*;
 import org.joo.promise4j.util.FutureCanceller;
 import org.joo.promise4j.util.TimeoutScheduler;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 import java.util.function.Supplier;
 
 public class CompletableDeferredObject<D, F extends Throwable> extends AbstractPromise<D, F> implements Deferred<D, F> {

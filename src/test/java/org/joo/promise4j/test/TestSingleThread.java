@@ -1,5 +1,16 @@
 package org.joo.promise4j.test;
 
+import org.joo.promise4j.Deferred;
+import org.joo.promise4j.DeferredStatus;
+import org.joo.promise4j.Promise;
+import org.joo.promise4j.PromiseException;
+import org.joo.promise4j.impl.*;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -7,21 +18,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Supplier;
-
-import org.joo.promise4j.Deferred;
-import org.joo.promise4j.DeferredStatus;
-import org.joo.promise4j.Promise;
-import org.joo.promise4j.PromiseException;
-import org.joo.promise4j.impl.AsyncDeferredObject;
-import org.joo.promise4j.impl.CompletableDeferredObject;
-import org.joo.promise4j.impl.JoinedPromise;
-import org.joo.promise4j.impl.JoinedResults;
-import org.joo.promise4j.impl.SyncDeferredObject;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class TestSingleThread {
